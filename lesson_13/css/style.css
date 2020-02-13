@@ -1,0 +1,80 @@
+.fon 	{
+	position: absolute;
+	z-index: -1;
+	width: 570px;
+	height: 570px;
+	margin-top: -100px;
+	margin-left: 0px;
+	background-color: #ebf4f4;
+
+}
+.header {
+	position: absolute;
+	margin-top: -3px;
+	margin-left: 154px;
+	width: 149px;
+	height: 25px;
+	background-color: #01b3b3;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial, serif;
+	font-weight: 700;
+	color: #ffffff;
+	font-stretch: expanded; /*Хочу расширить текст, почему не работает ???*/
+	vertical-align: middle;	/*Хочу выравнять по вертикали, почему не работает ??? Сделал через padding*/
+	padding: 3px 0;
+}
+.forma {
+	margin-top: 100px;
+	margin-left: 125px;
+	padding: 51px 0 0 30px;
+	width: 320px;
+	height: 370px;
+	background-color: #ffffff;
+	border: 1px solid #cfdede;
+}
+p, span{
+	font-size: 12px;
+	font-family: Arial, serif;
+	font-weight: 700;
+}
+span {
+	color: #01b3b3;
+}
+input {
+	margin-left: -2px;
+	width: 262px;
+	height: 32px;
+	border: 1px solid #cfdede;
+	font-style: italic;
+	font-size: 12px;
+	font-family: Arial, serif;
+	font-weight: 500;
+	background-color: #ebf4f4;
+}
+#p2 {
+	margin-top: 14px;
+	margin-bottom: 12px;
+}
+#p3	{
+	margin-top: 15px;
+	margin-bottom: 11px;
+}
+button {
+	margin-top: 34px;
+	margin-left: -1px;
+	width: 260px;
+	height: 45px;
+}
+.btn-primary {
+	background-color: #01b3b3;
+	border-color: #0aa2a2;
+}
+.btn {
+	font-size: 15px;
+	font-family: Arial, serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-stretch: condensed; /*Хочу сжать текст, почему не работает ???*/
+
+}
