@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/preview.jpg" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <title>Подбор шрифтов</title>       
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <header>
+    	<div class="container">
+  				<div class="text-box"><input type="search" class="form-control" autofocus placeholder="Введите свою фразу"></div>
+  				<div class="fonts">
+  					<p id="p1" class="resault">Начните писать фразу</p>
+  					<small>Вот так выглядит шрифт <strong>Open Sans</strong></small>
+  					<hr>
+  					<p id="p2" class="resault">Начните писать фразу</p>
+  					<small>Вот так выглядит шрифт <strong>Bebas Neue</strong></small>
+  					<hr>
+  					<p id="p3" class="resault">Начните писать фразу</p>
+  					<small>Вот так выглядит шрифт <strong>Lato</strong></small>
+  					<hr>
+  					<p id="p4" class="resault">Начните писать фразу</p>
+  					<small>Вот так выглядит шрифт <strong>Lobster</strong></small>
+            <hr>
+            <p id="p5" class="resault">Начните писать фразу</p>
+            <small>Вот так выглядит шрифт <strong>Nikoleta</strong></small>
+            <hr>
+            <p id="p6" class="resault">Начните писать фразу</p>
+            <small>Вот так выглядит шрифт <strong>Pompadur</strong></small>   					
+  				</div>
+    	</div>
+    </header>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+    		$('input').keyup(function(){
+    			$('p.resault').text($('input').val())
+    		});
+    </script>
+  </body>
+</html>

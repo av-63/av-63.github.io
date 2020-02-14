@@ -1,0 +1,22 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic');
+body {
+	font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+}*/
+
+/*СПОСОБ №3 загружаем в CSS Выжно чтобы @import url... был на 1 строчке*/
+
+@font-face {
+    font-family: 'MuseoSansCyrl500';
+    src: url('../fonts/MuseoSansCyrl500.eot');
+    src: url('../fonts/MuseoSansCyrl500.eot') format('embedded-opentype'),
+         url('../fonts/MuseoSansCyrl500.woff2') format('woff2'),
+         url('../fonts/MuseoSansCyrl500.woff') format('woff'),
+         url('../fonts/MuseoSansCyrl500.ttf') format('truetype'),
+         url('../fonts/MuseoSansCyrl500.svg#MuseoSansCyrl500') format('svg');
+}
+
+h1 {
+	font-family: 'MuseoSansCyrl500';
+	font-style: italic;
+	font-weight: 900;
+}

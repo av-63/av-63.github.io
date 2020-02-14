@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'Lobster';
+	/*src: url('../fonts/Lobster/Lobster-Regular.eot');*/
+	src: url('../fonts/Lobster/Lobster-Regular.eot') format('embedded-opentype'),
+		/*url('../fonts/MuseoSansCyrl500.woff2') format('woff2'),*/
+		url('../fonts/Lobster/Lobster-Regular.woff') format('woff'),
+		url('../fonts/Lobster/Lobster-Regular.ttf') format('truetype'),
+		url('../fonts/Lobster/Lobster-Regular.svg') format('svg');
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans/OpenSans-Regular.eot') format('embedded-opentype'),
+		url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+		url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'),
+		url('../fonts/OpenSans/OpenSans-Regular.svg') format('svg');
+}
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeue/BebasNeue-Regular.eot') format('embedded-opentype'),
+		url('../fonts/BebasNeue/BebasNeue-Regular.woff') format('woff'),
+		url('../fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype'),
+		url('../fonts/BebasNeue/BebasNeue-Regular.svg') format('svg');
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-Regular.eot') format('embedded-opentype'),
+		url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+		url('../fonts/Lato/Lato-Regular.ttf') format('truetype'),
+		url('../fonts/Lato/Lato-Regular.svg') format('svg');
+}
+@font-face {
+	font-family: 'Nikoleta';
+	src: url('../fonts/Nikoleta/Nikoleta.eot') format('embedded-opentype'),
+		url('../fonts/Nikoleta/Nikoleta.woff') format('woff'),
+		url('../fonts/Nikoleta/Nikoleta.ttf') format('truetype'),
+		url('../fonts/Nikoleta/Nikoleta.svg') format('svg');
+}
+@font-face {
+	font-family: 'Pompadur';
+	src: url('../fonts/Pompadur/Pompadur.eot') format('embedded-opentype'),
+		url('../fonts/Pompadur/Pompadur.woff') format('woff'),
+		url('../fonts/Pompadur/Pompadur.ttf') format('truetype'),
+		url('../fonts/Pompadur/Pompadur.svg') format('svg');
+}
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 1rem;
+}
+small {
+	font-size: 1.3rem;
+}
+hr {
+	margin: 10px 0;
+}
+#p1 {font-family: 'Open Sans';}
+#p2 {font-family: 'Bebas Neue';}
+#p3 {font-family: 'Lato';}
+#p4 {font-family: 'Lobster';}
+#p5 {font-family: 'Nikoleta';}
+#p6 {font-family: 'Pompadur';}
