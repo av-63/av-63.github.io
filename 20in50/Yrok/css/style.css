@@ -1,0 +1,98 @@
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	transition: all 1s;
+	margin-bottom: 30px;
+}
+.box:hover {
+	background-color: black;
+	margin-bottom: 0;
+}
+.box1{
+	display: inline-block;
+	margin-bottom: 40px;
+	transition: all 0.2s;
+	text-decoration: none;
+}
+.box1:hover {
+	text-decoration: underline;
+}
+.box1:visited {
+	color: yellow;
+}
+.box1:active {
+	color: green;
+	margin-bottom: 20px;
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid green;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.4)
+}
+li:nth-child(3) { /*так "odd" или "2n+1" -все нечетные, "even" или "2n" -все четные*/
+	background-color: grey;
+}
+p {
+	margin-top: 10px;
+	display: block;
+	width: 200px;
+	text-align: center;
+}
+p::before {			/*вставляет содержимое content перед <p>, если after то после*/ 
+	content: '';
+	display: block;
+	width: 200px;
+	height: 1px;
+	background-color: red;
+}
+h1 {
+	display: block;
+	width: 420px;
+	text-align: center;
+}
+h1::before {
+	content: '';
+	display: block;
+	width: 420px;
+	height: 1px;
+	transform: scaleX(0);
+	background-color: red;
+	transition: 0.3s;
+}
+h1:hover::before {
+	transform: scaleX(1);
+}
+h2 {
+	display: block;
+	margin-bottom: 20px;
+	width: 200px;
+	text-align: center;
+}
+h2::before {
+	content: '';
+	display: block;
+	width: 200px;
+	height: 2px;
+	transform-origin: 100%;
+	transform: scaleX(0);
+	background-color: red;
+	transition: 1s;
+}
+h2::after {
+	content: '';
+	display: block;
+	width: 200px;
+	height: 1px;
+	transform-origin: 0%;
+	transform: scaleX(0);
+	background-color: red;
+	transition: 1s;
+}
+h2:hover::before {
+	transform: scaleX(1);
+}
+h2:hover::after {
+	transform: scaleX(1);
+}
