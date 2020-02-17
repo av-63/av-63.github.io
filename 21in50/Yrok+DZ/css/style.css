@@ -177,6 +177,9 @@ section {
   .main {
     background-position: top left;
   }
+  .main-content h1 {
+    font-size: 3rem;
+  }
   .logo,
   .wrap-block {
     text-align: center;
