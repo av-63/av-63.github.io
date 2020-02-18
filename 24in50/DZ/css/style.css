@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'Nikoleta';
+	src: url('../fonts/Nikoleta/Nikoleta.eot') format('embedded-opentype'),
+		url('../fonts/Nikoleta/Nikoleta.woff') format('woff'),
+		url('../fonts/Nikoleta/Nikoleta.ttf') format('truetype'),
+		url('../fonts/Nikoleta/Nikoleta.svg') format('svg');
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Nikoleta', sans-serif;
+  text-align: center;
+}
+.img {
+	width: 300px;
+	height: 250px;
+	margin: 10px auto 0;
+	background: url(../img/delet.jpg) center no-repeat;
+	background-size: cover;
+}
+.btn {
+	width: 300px;
+	height: 50px;
+	font-family: 'Nikoleta', sans-serif;
+	font-size: 3rem;
+}
+.popup {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 255, 0, 0.3);
+	z-index: 1;
+}
+.popup-mod {
+	width: 700px;
+	height: 300px;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 4px solid #c4c2c3;
+	border-radius: 20px;
+	z-index: 2;
+}
+.header {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	border-radius: 16px 16px 0 0;
+	top: 0;
+	background-color: red;
+	text-align: center;
+}
+.header h1 {
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 3rem;
+	line-height: 50px;
+}
+.close {
+	display: inline-block;
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	margin: 4px;
+	top: 0;
+	right: 0;
+	transform: translateX(-30%);
+	z-index: 3;
+	overflow: hidden;
+}
+.close::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 8px;
+	background-color: #fff;
+	transform: translateY(-4px) scale(2) rotate(45deg);
+}
+.close::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 8px;
+	background-color: #fff;
+	transform: translateY(3px) scale(2) rotate(-45deg);
+}
+.close:hover {
+	cursor: pointer;
+}
+.close:hover::before {
+	background-color: black;
+}
+.close:hover::after {
+	background-color: black;
+}
+.telo {
+	width: 100%;
+	height: 130px;
+	margin-top: 50px;
+	background-color: #f8fcfb;
+	text-align: center;
+}
+.telo h2 {
+	font-size: 3rem;
+	line-height: 130px;
+	
+}
+.end {
+	width: 100%;
+	height: 120px;
+	border-radius: 0 0 16px 16px;
+	background-color: #f8fcfb;
+	text-align: center;
+}
+.popup-btn {
+	width: 35%;
+	height: 70px;
+	margin: 20px;
+	font-family: 'Nikoleta', sans-serif;
+	font-size: 4rem;
+	border-radius: 20px;
+	outline: none;
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 1);
+}
+.no {background-color: #90c34a;}
+.yes {background-color: #f38486;}
+.no:hover {
+	cursor: pointer;
+	background-color: rgba(0, 255, 0, 0.5);
+}
+.yes:hover {
+	cursor: pointer;
+	background-color: rgba(255, 0, 0, 0.75);
+}

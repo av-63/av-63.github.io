@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок №22/50</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<a href="#my-modal" class="link" data-toggle="modal">Ссылка на модальное окно</a>
+		<button class="btn btn-success" data-toggle="modal" data-target="#my-modal">Кнопка вызова модального окна</button>
+	</div>
+
+	<!-- Модальое окно от Bs3 -->
+	<div class="modal fade" id="my-modal">          <!-- tabindex="-1" role="dialog" -->
+		<!-- Само (белое) модальное окно -->
+	  <div class="modal-dialog modal-sm">				 <!-- role="document" -->
+	  	<!-- Содержимое окна -->
+	    <div class="modal-content">
+	    	<!-- Шапка окна -->
+	      <div class="modal-header">
+	      	<!-- кнопка закрыть -->
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <!-- заголовок окна -->
+	        <h4 class="modal-title">Наш заголовок</h4>
+	      </div>
+	      <!-- Тело окна -->
+	      <div class="modal-body">
+	        <p>Тут наш любой контент&hellip;</p>
+	        <img src="img/8f.png" alt="">
+	      </div>
+	      <!-- Подвал модального окна -->
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+</body>
+</html>

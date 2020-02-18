@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее  задание. Урок №23/50</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="img"></div>
+	<!-- можем вызвать ссылкой -->
+	<!-- <a href="javascript:PopUpShow()">Show popup</a> -->
+
+	<!-- вызываем кнопкой -->
+	<button class="btn" type="submit" onClick="location.href='javascript:PopUpShow()'" >Удалить файл</button>
+	
+	<div class="popup" id="popup1">
+		<div class="popup-mod">
+			<div class="header">
+				<h1>!!! danger !!!</h1>
+				<a class="close" href="javascript:PopUpHide()"></a>
+			</div>
+			<div class="telo">
+				<h2>Вы действительно  хотите удалить файл?</h2>
+			</div>
+			<div class="end">
+				<button class="popup-btn yes">Да</button>
+				<button class="popup-btn no">Нет</button>
+			</div>
+		</div>
+	</div>
+
+<!-- <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script> -->
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
+
+</body>
+</html>
