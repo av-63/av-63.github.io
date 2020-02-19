@@ -93,9 +93,13 @@ body {
 }
 .close:hover::before {
 	background-color: black;
+	transform: translateY(-4px) scale(2) rotate(225deg);
+	transition: 0.2s;
 }
 .close:hover::after {
 	background-color: black;
+	transform: translateY(3px) scale(2) rotate(135deg);
+	transition: 0.2s;
 }
 .telo {
 	width: 100%;
