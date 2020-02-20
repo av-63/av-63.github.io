@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  	<div class="container">
+  		<!-- Nav tabs -->
+  		  <ul class="nav nav-tabs">   <!-- role="tablist"  нужно в seo-->
+  		    <li class="active">		<!-- role="presentation"   нужно в seo--> 
+  		    	<a href="#home" data-toggle="tab">Home</a>   <!-- aria-controls="home" role="tab"   нужно в seo-->
+  		    </li>
+  		    <li><a href="#profile" data-toggle="tab">Profile</a></li>
+  		    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+  		    <li><a href="#settings" data-toggle="tab">Settings</a></li>
+  		  </ul>
+
+  		  <!-- Tab panes -->
+  		  <div class="tab-content">
+  		    <div class="tab-pane active" id="home">Здесь контент (а рамку разукрашу)</div>		<!-- role="tabpanel"   нужно в seo-->
+  		    <div class="tab-pane" id="profile"><img src="img/8f.png" alt=""></div>
+  		    <div class="tab-pane" id="messages"><img src="img/6f.png" alt=""></div>
+  		    <div class="tab-pane" id="settings">Может быть вообще что хочешь....</div>
+  		  </div>
+
+
+<div class="line"></div>
+
+  		  <!-- акордеон -->
+  		  <div class="panel-group" id="accordion">		<!-- role="tablist" aria-multiselectable="true" -->
+  		    <!-- первая панель -->
+  		    <div class="panel panel-default">
+  		    	<!-- сама панель -->
+  		      <div class="panel-heading" id="headingOne"> 		<!-- role="tab"  -->
+  		        <h4 class="panel-title">
+  		          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">		<!-- role="button"   aria-expanded="true" aria-controls="collapseOne"  -->
+  		            Первая панель
+  		          </a>
+  		        </h4>
+  		      </div>
+  		      	<!-- содержимое панели -->
+  		      <div id="collapseOne" class="panel-collapse collapse in">			<!-- role="tabpanel" aria-labelledby="headingOne" -->
+  		        <div class="panel-body">
+  		          Пишем контент
+  		        </div>
+  		      </div>
+  		    </div>
+  		    <!-- вторая панель и т.д. -->
+  		    <div class="panel panel-default">
+  		      <div class="panel-heading" id="headingTwo">		<!-- role="tab"  -->
+  		        <h4 class="panel-title">
+  		          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">			<!-- class="collapsed"   role="button" aria-expanded="false" aria-controls="collapseTwo" -->
+  		            Collapsible Group Item #2
+  		          </a>
+  		        </h4>
+  		      </div>
+  		      <div id="collapseTwo" class="panel-collapse collapse">			<!--  role="tabpanel" aria-labelledby="headingTwo" -->
+  		        <div class="panel-body">
+  		          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+  		        </div>
+  		      </div>
+  		    </div>
+  		    <div class="panel panel-default">
+  		      <div class="panel-heading" id="headingThree">
+  		        <h4 class="panel-title">
+  		          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">   <!-- class="collapsed" role="button"   aria-expanded="false" aria-controls="collapseThree"  -->
+  		            Collapsible Group Item #3
+  		          </a>
+  		        </h4>
+  		      </div>
+  		      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">		 <!-- role="tabpanel" aria-labelledby="headingThree" -->
+  		        <div class="panel-body">
+  		          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  		        </div>
+  		      </div>
+  		    </div>
+  		  </div>
+
+
+  	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

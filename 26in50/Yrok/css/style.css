@@ -1,0 +1,11 @@
+.nav-tabs>li.active>a,
+ .nav-tabs>li.active>a:focus,
+ .nav-tabs>li.active>a:hover {
+	border: 5px solid red
+}
+.line {
+	height: 5px;
+	width: 100%;
+	margin: 40px auto;
+	background-color: black;
+}
