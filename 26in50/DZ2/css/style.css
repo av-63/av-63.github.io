@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu.eot');
+	src: url('../fonts/Ubuntu/Ubuntu.eot') format('embedded-opentype'),
+		url('../fonts/Ubuntu/Ubuntu.woff') format('woff'),
+		url('../fonts/Ubuntu/Ubuntu.ttf') format('truetype'),
+		url('../fonts/Ubuntu/Ubuntu.svg') format('svg');
+}
+@font-face {
+	font-family: 'UbuntuBold';
+	src: url('../fonts/Ubuntu-Bold/Ubuntu-Bold.eot');
+	src: url('../fonts/Ubuntu-Bold/Ubuntu-Bold.eot') format('embedded-opentype'),
+		url('../fonts/Ubuntu-Bold/Ubuntu-Bold.woff') format('woff'),
+		url('../fonts/Ubuntu-Bold/Ubuntu-Bold.ttf') format('truetype'),
+		url('../fonts/Ubuntu-Bold/Ubuntu-Bold.svg') format('svg');
+}
+* {
+	box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/fon.jpg) center no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+h1, span {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	color: #0bbaf0;
+}
+h1 {
+	margin-top: 8rem;
+	font-size: 4rem;
+	font-family: 'UbuntuBold', sans-serif;
+}
+span {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+.line {
+	position: relative;
+	width: 13rem;
+	height: 2px;
+	margin-bottom: 3rem;
+	background-color: #dcdcdc;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+/*Настраиваю акардеон*/
+/*У heading убираем border и radius, добавляем цвета и pading*/
+.panel-default {
+	border: none;
+}
+.panel-default > .panel-heading {
+	color: #fff;
+    background-color: #0bbaf0;
+	border-radius: 0;
+	padding: 2rem 2rem 1rem;
+}
+/*Стили, эфекты и размер надписи в heading*/
+a {
+	text-decoration: none;
+	font-size: 2rem;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	font-size: 2rem;
+}
+/*У collapse забиваем border и создаем свой border(цвет, скругление) и размер*/
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+	position: relative;
+	width: 98%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0;
+	border: 3px solid #dcdcdc;
+	border-top: none;
+	border-radius: 0 0 1rem 1rem;
+}
+/*Стили и размер контента в collapse*/
+p {
+	margin: 1rem 3rem 4rem;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	color: #535353;
+}
+/*НА ЭТОМ МОЖНО ОСТАНОВИТСЯ, НО В МАКЕТЕ collapse плотно прилегает к следующему heading*/
+/*переносим margin между heading*/
+.panel-group .panel + .panel {
+	margin-top: 0;
+}
+.panel-default > .panel-heading {
+	margin-bottom: 5px;
+}
+/*скрываем появившейся margin между heading и collapse*/
+.panel-group .panel-heading + .panel-collapse > .panel-body::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 1rem;
+	width: 3px;
+	top: 0;
+	left: 0;
+	background-color: #dcdcdc;
+	transform: translateX(-3px) translateY(-1rem);
+	transition: 0s;
+}
+.panel-group .panel-heading + .panel-collapse > .panel-body::after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 1rem;
+	width: 3px;
+	top: 0;
+	right: 0;
+	background-color: #dcdcdc;
+	transform: translateX(3px) translateY(-1rem);
+	transition: 0s;
+}
