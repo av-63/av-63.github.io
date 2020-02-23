@@ -1,0 +1,71 @@
+/* Ключевые кадры анимации */
+/*@keyframes move {*/
+	/* первый кадр анимации */
+	/*from {
+		margin-left: 0;
+	}*/
+	/* промежуточные кадры */
+	/*10% {
+		margin-left: 20px;
+	}*/
+	/* конечный кадр */
+	/*to {
+		margin-left: 400px;
+	}
+}
+@keyframes bg-color {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: blue;
+	}
+}
+
+*/
+.box {
+	position: absolute;
+
+	top: calc(50% - 100px);
+	left: calc(50% - 100px);
+	
+
+	/*display: inline-block;*/
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	/*animation-name: move;*/
+
+	/*animation-duration: 4s;
+	animation-timing-function: cubic-bezier(0,1.95,1,-0.61);
+	animation-delay: 2s;
+	animation-direction: reverse;
+	animation-iteration-count: 2;*/
+	
+	/*animation: move 3s;
+	animation-fill-mode: forwards;*/
+
+	/*animation: move 2s linear forwards, bg-color 3s linear forwards;*/
+
+	/*animation-duration: 1.5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;*/
+}
+.box2 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-duration: 1.5s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+.box3 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-duration: 1.5s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;	
+}

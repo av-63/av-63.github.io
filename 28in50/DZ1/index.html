@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее  задание. Урок №26-1/50</title>
+	<link rel="stylesheet" href="css/Animate.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="fon">
+		<div class="bookmarks">
+			<input class="radio-btn" id="bookmarks1" type="radio" name="bookmarks" checked>
+			<label class="radio" for="bookmarks1">Вход</label>
+			<input class="radio-btn" id="bookmarks2" type="radio" name="bookmarks">
+			<label class="radio" for="bookmarks2">Регистрация</label>
+			<div class="bookmarks-window bookmarks-window-1">
+				<section class="content">
+					<div class="input-all wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="1.1s">
+						<input class="input" type="text" placeholder="Ваше имя">
+						<input class="input" type="text" placeholder="Пароль">
+					</div>
+					<a href="#">Забыли пароль?</a>
+					<input id="flag" type="checkbox" checked>
+					<label for="flag">Напомнить мне</label>
+					<button class="btn-window wow tada" data-wow-duration="1s">Войти</button>
+				</section>
+			</div>
+			<div class="bookmarks-window bookmarks-window-2">
+				<section class="content content-window-2">
+					<div class="input-all wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="1.1s">
+						<input class="input" type="text" placeholder="Ваш e-mail">
+						<input class="input" type="text" placeholder="Введите пароль">
+						<input class="input" type="text" placeholder="Повторите пароль">
+					</div>
+					<button class="btn-window wow flipInY" data-wow-duration="1s">Зарегистрироваться</button>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+		// var wow = new WOW;
+		// wow.init();
+	</script>
+</body>
+</html>
