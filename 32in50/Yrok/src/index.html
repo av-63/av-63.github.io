@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок №21</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Для parallax
+	<section class="white"></section>
+	<section class="parallax-window" data-parallax="scroll" data-speed="0.05" data-image-src="img/1f.png"></section>
+	<section class="white"></section>
+	<section class="parallax-window" data-parallax="scroll" data-image-src="img/2f.png"></section> -->
+	
+	<!-- rellax криво заработал в хром!!!! в опере нори. -->
+	<section class="white">
+		<img class="rellax" data-rellax-speed="1" src="img/1f.png" alt="">
+		<img class="rellax" data-rellax-speed="7" src="img/2f.png" alt="">
+		<img class="rellax" data-rellax-speed="-3" src="img/3f.png" alt="">
+		<img class="rellax" data-rellax-speed="6" src="img/4f.png" alt="">
+	</section>
+	<section></section>
+	
+
+	
+	<script src="js/jquery-2.1.4.js"></script>
+	
+	<!-- Для parallax
+	<script src="js/parallax.min.js"></script> -->
+	
+	<script src="js/rellax.min.js"></script>
+	<script>
+		var rellax = new Rellax('.rellax');
+	</script>
+
+</body>
+</html>
+
+
