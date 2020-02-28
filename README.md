@@ -25,5 +25,4 @@
 [31/50 Модуль 5. Практика. Часть 8.](https://av-63.github.io/31in50/Yrok+DZ/) - Закончил верстку блока с отзывами (адаптация).  
 [32/50 Модуль 6. Урок № 21 - Parallax эффект для сайта.](https://av-63.github.io/32in50/DZ/) - Домашнее задание (Rellax на Chrome работает криво, на Opera норм). Здесь репозиторий самого [урока](https://github.com/av-63/av-63.github.io/tree/master/32in50/Yrok/src) - Подключали Parallax и Rellax.  
 [33/50 Модуль 5. Практика. Часть 9.](https://av-63.github.io/33in50/Yrok+DZ/) - Верстаем схему работы и все включено.  
-
-
+[34/50 Модуль 6. Урок № 22 - Гео-карты для сайта.](https://av-63.github.io/34in50/DZ/) - Домашнее задание (резиновый 3 уровня, на css без bootstrep). Здесь репозиторий самого [урока.](https://github.com/av-63/av-63.github.io/tree/master/34in50/Yrok)  
