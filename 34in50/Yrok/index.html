@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок №22</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Как нас найти</h3>
+				<p>Адрес нашей компании: <strong>Кутакова гора</strong></p>
+				<p>Телефон нашей компании: <strong>107</strong></p>
+			</div>
+			<div class="col-md-6">
+
+				<!-- Через конструктор -->
+				<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af1387b20d93f6dc00a0521ff707b2aae66f06536fe2d4070ff42d42380fc7798&amp;width=100%25&amp;height=378&amp;lang=ru_RU&amp;scroll=false"></script> -->
+				<!-- scroll=true - скролится, scroll=false - не скролится -->
+
+				<!-- через АРI -->
+				<div id="map" style="width: 100%; height: 400px"></div>
+
+			</div>
+			<div class="col-md-6">
+				<h5>А Гугл ВРЕТ!!!</h5>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.5409409112763!2d50.16145701539889!3d53.094734601229355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4168a7debd7960b1%3A0xb4366c9c390eee32!2z0YPQuy4g0JTQvNC40YLRgNC40Y8g0JTQvtC90YHQutC-0LPQviwgMTEsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0Lsu!5e1!3m2!1sru!2sru!4v1582822235395!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+			<div class="col-md-6">
+				<h5>2ГИС</h5>
+				<a class="dg-widget-link" href="http://2gis.ru/samara/firm/2533803071395209/center/50.115832,53.178007/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Самары</a><div class="dg-widget-link"><a href="http://2gis.ru/samara/center/50.115832,53.178007/zoom/16/routeTab/rsType/bus/to/50.115832,53.178007╎Самарские лестницы, производственная компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Самарские лестницы, производственная компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":53.178007,"lon":50.115832,"zoom":16},"opt":{"city":"samara"},"org":[{"id":"2533803071395209"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+			</div>
+		</div>
+	</div>
+	<script>
+		ymaps.ready(function () {
+		    var myMap = new ymaps.Map('map', {
+		            center: [53.0941, 50.1623],
+		            zoom: 16
+		        }, {
+		            searchControlProvider: 'yandex#search'
+		        }),
+
+		        // Создаём макет содержимого.
+		        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+		            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+		        ),
+
+		        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+		            hintContent: 'МАГНИТ',
+		            balloonContent: 'Здесь продают говно. С 8-00 по 22-00. Без обеда и выходных'
+		        }, {
+		            // Опции.
+		            // Необходимо указать данный тип макета.
+		            iconLayout: 'default#image',
+		            // Своё изображение иконки метки.
+		            iconImageHref: 'img/healthcare-and-medical.png',
+		            // Размеры метки.
+		            iconImageSize: [50, 50],
+		            // Смещение левого верхнего угла иконки относительно
+		            // её "ножки" (точки привязки).
+		            iconImageOffset: [-25, -25]
+		        });		        
+		    myMap.geoObjects
+		        .add(myPlacemark)
+		        .add(myPlacemarkWithContent);
+		});
+	</script>
+</body>
+</html>
