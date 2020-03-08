@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок №24</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<form action="mailer/smart.php" method="POST">  <!-- Изночально игрались с mail.php -->
+		<input type="text" name="user_name" placeholder="Введите имя">
+		<input type="tel" name="user_phone" placeholder="Введите телефон">
+
+		<!-- <input type="submit" value="Отправить"> -->
+		<button type="submit">Отправить</button>
+	</form>
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script>
+		$('form').submit(function(event) {
+			event.preventDefault();
+			$.ajax({
+				type: "POST",
+				url: "mailer/smart.php",
+				data: $(this).serialize()
+			}).done(function() {
+				$(this).find("input").val("");
+				alert("Сообщение успешно отправлено");
+				$("form").trigger("reset");
+			});
+			return false;
+		});
+	</script>
+
+</body>
+</html>
