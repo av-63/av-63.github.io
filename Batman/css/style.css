@@ -203,15 +203,23 @@ body {
     text-decoration: underline;
     line-height: 150%;
 }
+
 .full-info {
     flex: 0.97;
+}
+.bookmark-added {
+    vertical-align: middle;
 }
 .full-content {
     display: flex;
     justify-content: space-between;
 }
 .tabs-content {
+    display: none;
     margin-right: 70px;
+}
+.visible {
+    display: block;
 }
 .tabs {
     display: flex;
